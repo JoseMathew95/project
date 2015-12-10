@@ -1,8 +1,10 @@
 <% include ../partials/header.ejs %>
-
+<div class="jumbotron" style="background-image: url('http://bgfons.com/upload/cloth_texture622.jpg');
+             background-repeat:no-repeat; display: compact ; " >
 <main class="container">
-    <h1>Add a New User</h1>
-       <div class="col-sm-4">
+    <div class="col-lg-12 text-center v-center ">
+    <h1 class="heading">Add A New User</h1>
+     <span class="col-md-4 col-md-offset-4">
         <form method="post">
             <fieldset class="form-group">
                 <label for="email">Email: *</label>
@@ -24,8 +26,9 @@
                 <input type="submit" class="btn btn-success" value="Submit"/>
             </fieldset>
         </form>
+     </span>
     </div>
-
 </main>
+</div>
 
 <% include ../partials/footer.ejs %>

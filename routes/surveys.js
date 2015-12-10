@@ -38,7 +38,13 @@ router.post('/', requireAuth, function (req, res, next) {
         template: req.body.template,
         active: req.body.activeDate,
         expire: req.body.expireDate,
-        noOfQuestions: req.body.noOfQuestions
+        noOfQuestions: req.body.noOfQuestions,
+        question : req.body.question,
+        op1: req.body.option1,
+        op2: req.body.option2,
+        op3: req.body.option3,
+        op4: req.body.option4
+        
         
     }, function (err, Survey) {
         if (err) {
